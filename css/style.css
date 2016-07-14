@@ -5,26 +5,35 @@ body{
 	clear: both;
 }
 .container{
+	position: relative;
 	width:910px;
 	padding-top: 22px;
 	margin: 0 auto;
 }
 /*HEDER*/
+header{
+	position: relative;
+}
 .phoneImg{
 	float: left;
 	margin-left: 7px;
 }
 .phone{
 	float: left;
-	margin-left: 3px;
-	margin-top: 2px;
+	display: inline-block;
+	position: absolute;
+	left: 32px;
+	top: 2px;
 	color: #5e686c; /* text color */
-	font-family: "Arial";
-	font-size: 18px;
+	font-family: "Arial", sans-serif;
+	font-size: 19px;
 }
 .shapeLink{
+	position: absolute;
 	height: 19px;	
-	width: 74px;
+	width: 75px;
+	right: 7px;
+	top: -3px;
 	border: 1px solid #bdc3c7;
 	-moz-border-radius: 11px;
 	-webkit-border-radius: 11px;
@@ -33,22 +42,26 @@ body{
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
 	background-color: #fff; 
-	box-shadow: 0 0 1px #bdc3c7;
-}
-.shapeLink{
-	float: right;
-	margin-right: 6px;
-	margin-top: -3px;
+	box-shadow: 0px 1px 2px #bdc3c7;
 }
 .shapeLink a{
-	margin-left: 5px;
+	position: absolute;
+}
+.shapeLink .mail{
+	right: 12px;
+}
+.shapeLink .map{
+	right: 33px;
+}	
+.shapeLink .home{
+	right: 55px;
 }
 .logIn{
-	float: right;
+	position: absolute;
 	width: 495px;
 	height: 25px;	
-	margin-right: 19px;
-	margin-top: -4px;
+	left: 314px;
+	bottom: 288px;
 	-moz-border-radius: 4px / 3px;
 	-webkit-border-radius: 4px / 3px;
 	border-radius: 4px / 3px; /* border radius */
@@ -99,19 +112,36 @@ body{
 	line-height: 2.3em;
 }
 .logIn .reg{
-	margin-left: 0;
+	position: absolute;
+	right: 123px;
+	font-family: "Lucida Sans Unicode", sans-serif;
+}
+.logIn input[type="submit"]{
+	position: absolute;
+	right: 195px;
+	background: transparent;
+	color: white;
+	width: 40px;
+	text-align: center;
+	height: 20px;
+	border: none;
+	box-shadow: none;
 }
 .logIn> span{
+	position: absolute;
+	right: 195px;
+	top: 7px;
 	color: #fff; /* text color */
 	font-family: "Lucida Sans Unicode", sans-serif;
 	font-size: 11px;
-	margin-left: 3px;
 }
 .logIn .lostPassword{
-	color: #bfbfbf;; /* text color */
+	position: absolute;
+	right: 10px;
+	top: -1px;
+	color: #bfbfbf; /* text color */
 	font-family: "Lucida Sans Unicode", sans-serif;
-	font-size: 11px;
-	margin-left: 15px;
+	font-size: 12px;
 	text-decoration: underline;
 }
 .mainfoto{
@@ -119,6 +149,7 @@ body{
 } 
 /*NAV MENU*/
 nav ul{
+	position: relative;
 	width: 909px;
 	height: 32px;
 	margin-top: 3px;
@@ -138,63 +169,102 @@ nav ul{
 	background-image: -webkit-linear-gradient(bottom, #000 0%, #565f68 100%); /* gradient overlay */
 	background-image: linear-gradient(bottom, #000 0%, #565f68 100%); /* gradient overlay */
 }
-
-nav li a{ 
-	float: left;
-	padding: 0 16px;
-	text-decoration: none;
-	margin-top: 4px;
-	color: #b1bcc0; /* text color */
-	font-family: "Lucida Sans Unicode", sans-serif;
-	font-size: 14px;
-	line-height: 1.7em;
-}
-nav .contacts{
-	padding-left: 10px;
-}
-nav li:first-child{
-	margin-left: 125px;
-}
-nav li:last-child{
-	margin-left: -20px;
-	color: #899195; /* text color */
-	font-family: "Arial";
+/*.bascket div{
 	font-size: 11px;
-}
-.bascket{
-	display: inline-block;
-	padding-left: 70px;
-}
-.bascket img{
-	display: inline-block;
-	margin-top: 7px;
-}
-.bascket div{
-	float: right;
-	margin-top: 9px;
-}
-.bascket span{
+	color: #b1bcc0;
+	font-family: "Lucida Sans Unicode", sans-serif;
+}*/.uah{
+	position: absolute;
+	left: 845px;
+	bottom: 10px;
 	color: #0d598f; /* text color */
 	font-family: "Arial";
-	font-size: 12px;
+	font-size: 13px;
 }
-nav li a:hover{
-	color: #fff;
-	-moz-border-radius: 13px;
-	-webkit-border-radius: 13px;
-	border-radius: 13px; /* border radius */
-	-moz-background-clip: padding;
-	-webkit-background-clip: padding-box;
-	background-clip: padding-box; /* prevents bg color from leaking outside the border */
-	background-color: #f60202; /* layer fill content */
+.sum{
+	position: absolute;
+	left: 780px;
+	top: 10px;
+	color: #b1bcc0; /* text color */
+	font-family: "Lucida Sans Unicode";
+	font-size: 11px;
+}
+.num{
+	position: absolute;
+	left: 759px;
+	top: 10px;
+	color: #0d598f; /* text color */
+	font-family: "Arial";
+	font-size: 13px;
+}
+.item{
+	position: absolute;
+	left: 710px;
+	top: 10px;
+	color: #b1bcc0; /* text color */
+	font-family: "Lucida Sans Unicode";
+	font-size: 11px;
+}
+.bascket img{
+	position: absolute;
+	left: 682px;
+	top: 7px;
+}
+.artic,
+.contacts,
+.shipping,
+.pay{
+	text-decoration: none;
+	font-family: "Lucida Sans Unicode", sans-serif;
+	font-size: 14px;
+	color: #a2acb0;
+}
+.contacts{
+	position: absolute;
+	left: 535px;
+	top: 10px;
+}
+.artic{
+	position: absolute;
+	left: 457px;
+	top: 10px;
+}
+.shipping{
+	position: absolute;
+	left: 353px;
+	top: 10px;
+}
+.pay{
+	position: absolute;
+	left: 265px;
+	top: 10px;
+}
+.about{
+	position: absolute;
+	left: 145px;
+	top: 10px;
+}
+nav li .active{
+	padding: 7px 17px 5px 20px;
+	left: 125px;
+	top: 3px;
+	text-decoration: none;
+	border-radius: 13px; 
 	background-image: -moz-linear-gradient(top, #1f6987 0%, #114165 59.23%, #0b3155 100%); /* gradient overlay */
 	background-image: -o-linear-gradient(top, #1f6987 0%, #114165 59.23%, #0b3155 100%); /* gradient overlay */
 	background-image: -webkit-linear-gradient(top, #1f6987 0%, #114165 59.23%, #0b3155 100%); /* gradient overlay */
 	background-image: linear-gradient(top, #1f6987 0%, #114165 59.23%, #0b3155 100%); /* gradient overlay */
+	color: #fff; 
+	font-family: "Lucida Sans Unicode", sans-serif;
+	font-size: 14px;
 }
 /*SECTION FORMS*/
+section{
+	position: absolute;
+	left: 10px;
+}
 .forms form{
-	display: inline-block;
+	position: absolute;
 	border: 1px solid #9b9c9d; /* stroke */
 	-moz-border-radius: 18px;
 	-webkit-border-radius: 18px;
@@ -207,22 +277,26 @@ nav li a:hover{
 	-webkit-box-shadow: 3px 4px 5px rgba(104,104,104,.6); /* drop shadow */
 	box-shadow: 3px 4px 5px rgba(104,104,104,.6); /* drop shadow */
 }
-.searchAuto{
-	margin-top: 12px;
-	margin-left: 5px;
-	width: 413px;
-	height: 134px;
-}
-.searchTire{
-	margin-left: 10px;
-	width: 192px;
-	height: 134px;
-}
 .searchDiscs{
-	margin-left: 5px;
 	width: 267px;
 	height: 134px;
+	left: 625px;
+	top: 10px;
 }
+.searchTire{
+	width: 192px;
+	height: 134px;
+	left: 421px;
+	top: 10px;
+}
+.searchAuto{
+	width: 413px;
+	height: 134px;
+	left: -5px;
+	top: 10px;
+}
+
+
 /*LEFT COLUMN*/
 .circle{
 	display: inline-block;
@@ -231,13 +305,13 @@ nav li a:hover{
 	padding: 6px;
 }
 .left{
-	margin-top: 14px;
-	float: left;
+	position: absolute;
 	width: 193px;
+	top: 496px;
 }
 .left .catalog{
-	width: 178px;
-	padding: 2px;
+	width: 180px;
+	height: 25px;
 	color: #114165; /* text color */
 	font-family: "Lucida Sans Unicode", sans-serif;
 	font-size: 13px;
@@ -253,22 +327,73 @@ nav li a:hover{
 	-webkit-box-shadow: 2px 3px 3px rgba(150,150,150,.5); /* drop shadow */
 	box-shadow: 2px 3px 3px rgba(150,150,150,.5); /* drop shadow */
 }
-.left img{
-	float: left;	
+.catalog img{
+	position: absolute;
+	left: 2px;
+	top: 2px;
 }
-.left span{
-	float: left;
-	margin-top: 5px;
+.prod{
+	position: absolute;
+	left: 90px;
+	top: 8px;
 }
+.catProd{
+	position: absolute;
+	left: 27px;
+	top: 8px;
+}
+
 .left ul{
+	position: relative;
 	list-style: circle;
+	height: 140px;
+	border: 1px solid transparent;
 }
-.left ul li{
-	margin-left: 50px;
-	line-height: 2.1em;
+.tire{
+	position: absolute;
+	left: 25px;
+	top: 21px;
+}
+.bolt{
+	position: absolute;
+	top: 20px;
+}
+.discs{
+	top: -14px;
+}
+.bolts{
+	top: -30px;
+}
+.article1,
+.article2,
+.article3,
+.article4{
+	position: absolute;
+	left: 51px;
+
+}
+.article1 a,
+.article2 a,
+.article3 a,
+.article4 a{
+	margin-left: -5px;
+	font-size: 13px;
+	color: #114165; /* text color */
+	font-family: "Lucida Sans Unicode", sans-serif;
+}
+.article4{
+	top: 123px;
+}
+.article3{
+	top: 97px;
+}
+.article2{
+	top: 71px;
+}
+.article1{
+	top: 46px;
 }
 .left .title{
-	margin-left: 2px;
 	padding: 2px 4px;
 	width: 140px;
 	border: 1px solid #79878d;
@@ -280,10 +405,10 @@ nav li a:hover{
 .left .indent{
 	margin-top: 12px;
 }
-.circle,
-.tire{
+.circle{
 	float: left;
 }
+
 .left li,
 .left li a:visited{
 	color:#114165;
@@ -295,19 +420,20 @@ nav li a:hover{
 .active a{
 	font-weight: bold;
 	font-style: italic;
-	font-size: 13px;
+	font-size: 14px;
 	text-decoration: underline;
+	font-family: "Lucida Sans Unicode", sans-serif;
 }
 /*RIGHT COLUMN*/
 .right{
-	margin-top: 12px;
-	margin-right: -11px; 
-	float: right;
+	position: absolute;
 	width: 193px;
+	left: 726px;
+	top: 494px;
 }
-.right .brands{
-	width: 175px;
-	padding: 2px;
+.right .catalog{
+	width: 180px;
+	height: 25px;
 	color: #114165; /* text color */
 	font-family: "Lucida Sans Unicode", sans-serif;
 	font-size: 13px;
@@ -323,52 +449,108 @@ nav li a:hover{
 	-webkit-box-shadow: 2px 3px 3px rgba(150,150,150,.5); /* drop shadow */
 	box-shadow: 2px 3px 3px rgba(150,150,150,.5); /* drop shadow */
 }
-.right img{
-	float: left;	
+.brands{
+	position: absolute;
+	left: 31px;
+	top: 7px;
+	font-family: "Lucida Sans Unicode", sans-serif;
+	font-size: 14px;
 }
-.right span{
-	float: left;
-	margin-top: 5px;
+.right .catalog img{
+	position: absolute;
+	width: 23px;
+	height: 22px;
+	left: 3px;
 }
 .right .title{
-	margin-left: 12px;
+	position: absolute;
+	top: 41px;
+	left: 15px;
 	padding: 2px 4px;
-	width: 125px;
+	width: 126px;
 	border: 1px solid #79878d;
-	border-radius: 13px;
+	border-radius: 11px;
 	color: #114165; /* text color */
 	font-family: "Lucida Sans Unicode", sans-serif;
 	font-size: 14px;
 }
-.right .indent{
-	margin-top: 14px;
-	margin-bottom: 5px;
+.right.indent{
+	margin-top: 12px;
 }
-.right .indent_2{
-	margin-top: 9px;
-	margin-bottom: 5px;
+.right .title2{
+	position: absolute;
+	top: 155px;
+	left: 15px;
+	padding: 2px 4px;
+	width: 126px;
+	border: 1px solid #79878d;
+	border-radius: 11px;
+	color: #114165; /* text color */
+	font-family: "Lucida Sans Unicode", sans-serif;
+	font-size: 14px;
 }
-.right input[type="radio"]{
-	margin-left: 22px;
-	margin-bottom: 5px;
+.circle{
+	float: left;
 }
-.right p{
-	position: relative;
-	color:#114165;
-	font-size: 12px;
-	margin-bottom: 5px;
+.right .tire{
+	top: 7px;
+}
+input[type="checkbox"]{
+	position: absolute;
+	left: 21px;
 }
 label{
 	position: absolute;
-	top: 4px;
-	left: 46px;
+	left: 49px;
 }
-.brand input[type="submit"]{
-	margin-top: 10px;
-	margin-left: 23px;
-	padding: 6px 15px;
-	color: white; 
-	font-size: 11px;
+#brand1{
+	top: 75px;
+}
+.brand1{
+	top: 77px;
+}
+#brand2{
+	top: 100px;
+}
+.brand2{
+	top: 102px;
+}
+#brand3{
+	top: 125px;
+}
+.brand3{
+	top: 127px;
+}
+#brand4{
+	top: 189px;
+}
+.brand4{
+	top: 193px;
+}
+#brand5{
+	top: 215px;
+}
+.brand5{
+	top: 218px;
+}
+#brand6{
+	top: 241px;
+}
+.brand6{
+	top: 244px;
+}
+form .formDiscs{
+top: 2000px;	
+}
+.right input[type="submit"]{
+	position: absolute;
+	top: 277px;
+	left: 24px;
+    width: 83px;
+    height: 26px;
+    color: #fff;
+    font-family: "Lucida Sans Unicode", sans-serif;
+	font-size: 13px;
 	border: 1px solid #a7abad; /* stroke */
 	-moz-border-radius: 11px / 13px;
 	-webkit-border-radius: 11px / 13px;
@@ -381,14 +563,15 @@ label{
 	background-image: -o-linear-gradient(top, #1f6987 0%, #114165 59.23%, #0b3155 100%); /* gradient overlay */
 	background-image: -webkit-linear-gradient(top, #1f6987 0%, #114165 59.23%, #0b3155 100%); /* gradient overlay */
 	background-image: linear-gradient(top, #1f6987 0%, #114165 59.23%, #0b3155 100%); /* gradient overlay */
+
 }
 /*MAIN CONTENT*/
 main{
-	float: left;
+	position: absolute;
 	width: 526px;
 	height: 627px;
-	margin-top: 11px;
-	margin-left: -2px;
+	left: 191px;
+	top: 493px;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	border-radius: 3px; /* border radius */
@@ -408,13 +591,15 @@ figure{
 .price{
 	color: #114165; /* text color */
 	font-family: "Arial";
-	font-size: 18px;
+	font-size: 17px;
 	font-weight: bold;
 	font-style: italic;
 }
 figcaption p a{
+	display: inline-block;
+	margin-top: 1px;
 	color: #206988;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -442,6 +627,9 @@ figcaption span{
 .thirdLine figure{
 	margin-left: 25px;
 }
+.Goodyear{
+	position: absolute;
+}
 .tradeMarcs{
 	height: 30px;
 	margin-top: 42px;
@@ -450,11 +638,45 @@ figcaption span{
 
 }
 .tradeMarcs a{
-	float: left;
-	margin-right: 14px;
+	position: absolute;
+
+}
+.dunlop{
+	left: 721px;
+	top: 1163px;
+}
+.pirelli{
+	left: 645px;
+	top: 1163px;
+}
+.factory{
+	left: 575px;
+	top: 1158px;
+}
+.avon{
+	left: 485px;
+	top: 1163px;
+}
+.cooper{
+	left: 414px;
+	top: 1161px;
+}
+.continental{
+	left: 322px;
+	top: 1162px;
+}
+.bridge{
+	left: 212px;
+	top: 1162px;
+}
+.toyo{
+	left: 117px;
+	top: 1162px;
 }
 /*FOOTER*/
 footer{
+	position: absolute;
+	top: 1210px;
 	width: 908px;
 	min-height: 15vh;
 	margin: 0 auto;

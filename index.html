@@ -11,34 +11,34 @@
 	<div class="container">
 		<header>
 			<span class="phoneImg"><img src="img/phone.png"></span>
-			<span class="phone">(044)123-45-67&nbsp; &nbsp;(044)567-89-10</span>
-			<div class="shapeLink">
-				<a href="#" class="home"><img src="img/home.png"></a>
-				<a href="#" class="map"><img src="img/map.png"></a>
+			<span class="phone">(044)123-45-67&nbsp;(044)567-89-10</span>
+					<div class="shapeLink">
+						<a href="#" class="home"><img src="img/home.png"></a>
+						<a href="#" class="map"><img src="img/map.png"></a>
 				<a href="#" class="mail"><img src="img/mail.png"></a>
-			</div>
+					</div>
 			<form action="#" class="logIn">
 				<img src="img/sign.png">
 				<input type="text" name="name" placeholder="логин">
 				<input type="password" name="password" placeholder="пароль">
-				<a href="#">вход</a><span>|</span>
+				<input type="submit" value="вход"><span>|</span>
 				<a href="#" class="reg">регистрация</a>
 				<a href="#" class="lostPassword">забыли пароль?</a>
 			</form>
-			<img src="img/mainfoto.jpg" class="mainfoto"></img>
+			<img src="img/mainfoto.jpg" class="mainfoto">
 		<nav>
 			<ul>
-				<li><a href="#">О КОМПАНИ</a></li>
-				<li><a href="#">ОПЛАТА</a></li>
-				<li><a href="#">ДОСТАВКА</a></li>
-				<li><a href="#">СТАТЬИ</a></li>
+				<li><a href="#" class="active about">О КОМПАНИ</a></li>
+				<li><a href="#" class="pay">ОПЛАТА</a></li>
+				<li><a href="#" class="shipping">ДОСТАВКА</a></li>
+				<li><a href="#" class="artic">СТАТЬИ</a></li>
 				<li><a href="#" class="contacts">КОНТАКТЫ</a></li>
 				<li class="bascket">
 					<img src="img/bascket.png">
-					<div>&nbsp;&nbsp;товаров:
-						<span>0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>на сумму:&nbsp;&nbsp;&nbsp;&nbsp; 
-						<span>0.00 грн</span>
-					</div> 
+					<span class="item">товаров:</span>
+						<span class="num">0</span>
+						<span class="sum">на сумму:</span>
+						<span class="uah">0.00 грн.</span> 
 				</li>
 			</ul>
 		</nav>		
@@ -51,7 +51,7 @@
 		<aside class="left">
 			<div class="catalog">
 				<img src="img/catalog.png">
-				<span>КАТАЛОГ ПРОДУКЦИИ:</span>
+				<span class="catProd">КАТАЛОГ</span><span class="prod">ПРОДУКЦИИ:</span>
 				<div class="claerfix"></div>
 			</div>
 			<ul>
@@ -60,126 +60,133 @@
 					<span class="tire">&nbsp;ШИНЫ</span>
 					<div class="claerfix"></div>
 				</div>
-				<li><a href="#">Наименование 1</a></li>
-				<li class="active"><a href="">Наименование 2</a></li>
-				<li><a href="">Наименование 3</a></li>
-				<li><a href="">Наименование 4</a></li>
+				<li class="article1"><a href="#">Наименование 1</a></li>
+				<li class="article2 active"><a href="#">Наименование 2</a></li>
+				<li class="article3"><a href="#">Наименование 3</a></li>
+				<li class="article4"><a href="#">Наименование 4</a></li>
 			</ul>
-			<ul>
-				<div class="title">
+			<ul class="discs">
+				<div class="title indent">
 					<div class="circle"></div>
 					<span class="tire">&nbsp;ДИСКИ</span>
 					<div class="claerfix"></div>
 				</div>
-				<li><a href="">Наименование 1</a></li>
-				<li><a href="">Наименование 2</a></li>
-				<li><a href="">Наименование 3</a></li>
-				<li><a href="">Наименование 4</a></li>
+				<li class="article1"><a href="#">Наименование 1</a></li>
+				<li class="article2"><a href="#">Наименование 2</a></li>
+				<li class="article3"><a href="#">Наименование 3</a></li>
+				<li class="article4"><a href="#">Наименование 4</a></li>
 			</ul>
-			<ul>
-				<div class="title">
+			<ul class="bolts">
+				<div class="title indent">
 					<div class="circle"></div>
-					<span class="tire">&nbsp;БОЛТЫ</span>
+					<span class="bolt">&nbsp;БОЛТЫ</span>
 					<div class="claerfix"></div>
 				</div>
-				<li><a href="">Наименование 1</a></li>
-				<li><a href="">Наименование 2</a></li>
-				<li><a href="">Наименование 3</a></li>
-				<li><a href="">Наименование 4</a></li>
+				<li class="article1"><a href="#">Наименование 1</a></li>
+				<li class="article2"><a href="#">Наименование 2</a></li>
+				<li class="article3"><a href="#">Наименование 3</a></li>
+				<li class="article4"><a href="#">Наименование 4</a></li>
 			</ul>
 		</aside>
 		<aside class="right">
-			<div class="brands">
+			<div class="catalog">
 				<img src="img/catalog.png">
-				<span>&nbsp;БРЕНДЫ:</span>
-				<div class="claerfix"></div>
-			</div>
-			<form class="brand">
-				<div class="title indent">
+				<span class="brands">БРЕНДЫ</span>
+				<form action="#">
+					<div class="title indent">
 					<div class="circle"></div>
 					<span class="tire">&nbsp;ШИНЫ</span>
 					<div class="claerfix"></div>
-				</div>
-				<p><input type="radio" name="tire" value="brand_1" id="tire1"><label for="tire1">Бренд &nbsp;1</label></p>
-
-				<p><input type="radio" name="tire" value="brand_2" id="tire2"><label for="tire2">Бренд &nbsp;2</label></p>
-
-				<p><input type="radio" name="tire" value="brand_3" id="tire3"><label for="tire3">Бренд &nbsp;3</label></p>
-				<div class="title indent_2">
+					</div>
+				<input type="checkbox" name="1" id="brand1">
+				<label for="brand1" class="brand1">Бренд 1</label>
+				
+				<input type="checkbox" name="2" id="brand2">
+				<label for="brand2" class="brand2">Бренд 2</label>
+				
+				<input type="checkbox" name="3" id="brand3">
+				<label for="brand3" class="brand3">Бренд 3</label>
+					<div class="title2">
 					<div class="circle"></div>
 					<span class="tire">&nbsp;ДИСКИ</span>
 					<div class="claerfix"></div>
-				</div>
-				<p><input type="radio" name="disc" value="brand_1" id="disc1"><label for="disc1">Бренд &nbsp;1</label></p>
-
-				<p><input type="radio" name="disc" value="brand_2" id="disc2"><label for="disc2">Бренд &nbsp;2</label></p>
-
-				<p><input type="radio" name="disc" value="brand_3" id="disc3"><label for="disc3">Бренд &nbsp;3</label><p>
+					</div>
+				<input type="checkbox" name="4" id="brand4">
+				<label for="brand4" class="brand4">Бренд 1</label>
+				
+				<input type="checkbox" name="5" id="brand5">
+				<label for="brand5" class="brand5">Бренд 2</label>
+				
+				<input type="checkbox" name="6" id="brand6">
+				<label for="brand6" class="brand6">Бренд 3</label>	
+				
 				<input type="submit" value="ВЫБРАТЬ">
-			</form>
+				</form>
+				<div class="claerfix"></div>
+			</div>
 		</aside>
 		<main>
 			<div class="firstLine"><figure>
 					<figcaption><p><a href="#">Goodyear</a></p><span>Ultra Grip Extreme</span></figcaption>
 					<img src="img/GY1.png">
-				<figcaption class="price">90.00 грн.</figcaption>
+				<figcaption class="price">&nbsp;&nbsp;&nbsp;&nbsp;90.00 грн.</figcaption>
 				</figure>
 				<figure>
 					<figcaption><p><a href="#">Nokain</a></p><span>Hakkapeliitta R</span></figcaption>
 					<img src="img/nok1.png">
-					<figcaption class="price">115.00 грн.</figcaption>	
+					<figcaption class="price">&nbsp;&nbsp;&nbsp;&nbsp;115.00 грн.</figcaption>	
 				</figure>
 				<figure>
 					<figcaption><p><a href="#">Hankook</a></p><span>K 708 155/65 R14</span></figcaption>
 					<img src="img/han1.png">
-					<figcaption class="price">393.00 грн.</figcaption>
+					<figcaption class="price">&nbsp;&nbsp;&nbsp;&nbsp;393.00 грн.</figcaption>
 				</figure>
 			</div>
 			<div class="secondLine">
 				<figure>
 					<figcaption><p><a href="#">Goodyear</a></p><span>Ultra Grip Extreme</span></figcaption>
 					<img src="img/GY1.png">
-					<figcaption class="price">90.00 грн.</figcaption>	
+					<figcaption class="price">&nbsp;&nbsp;&nbsp;&nbsp;90.00 грн.</figcaption>	
 					</figure>
 				<figure>
 					<figcaption><p><a href="#">Nokain</a></p><span>Hakkapeliitta R</span></figcaption>	
 					<img src="img/nok1.png">
-					<figcaption class="price">115.00 грн.</figcaption>
+					<figcaption class="price">&nbsp;&nbsp;&nbsp;&nbsp;115.00 грн.</figcaption>
 				</figure>
 				<figure>
 					<figcaption><p><a href="#">Hankook</a></p><span>K 708 155/65 R14</span></figcaption>
 					<img src="img/han1.png">
-					<figcaption class="price">393.00 грн.</figcaption>
+					<figcaption class="price">&nbsp;&nbsp;&nbsp;&nbsp;393.00 грн.</figcaption>
 					</figure>
 			</div>
 			<div class="thirdLine">
 				<figure>
 					<figcaption><p><a href="#">Goodyear</a></p><span>Ultra Grip Extreme</span></figcaption>
 					<img src="img/GY1.png">
-					<figcaption class="price">90.00 грн.</figcaption>	
+					<figcaption class="price">&nbsp;&nbsp;&nbsp;&nbsp;90.00 грн.</figcaption>	
 					</figure>
 				<figure>
 					<figcaption><p><a href="#">Nokain</a></p><span>Hakkapeliitta R</span></figcaption>	
 					<img src="img/nok1.png">
-					<figcaption class="price">115.00 грн.</figcaption>
+					<figcaption class="price">&nbsp;&nbsp;&nbsp;&nbsp;115.00 грн.</figcaption>
 					</figure>
 				<figure>
 					<figcaption><p><a href="#">Hankook</a></p><span>K 708 155/65 R14</span></figcaption>
 					<img src="img/han1.png">
-					<figcaption class="price">393.00 грн.</figcaption>
+					<figcaption class="price">&nbsp;&nbsp;&nbsp;&nbsp;393.00 грн.</figcaption>
 					</figure>
 			</div>
 		</main>
 			<div class="claerfix"></div>
 		<div class="tradeMarcs ">
-			<a href="#"><img src="img/toyo.png"></a>
-			<a href="#"><img src="img/bridge.png"></a>
-			<a href="#"><img src="img/continental.png"></a>
-			<a href="#"><img src="img/cooper.png"></a>
-			<a href="#"><img src="img/avon.png"></a>
-			<a href="#"><img src="img/factory.png"></a>
-			<a href="#"><img src="img/pirelli.png"></a>
-			<a href="#"><img src="img/dunlop.png"></a>
+			<a href="#" class="toyo"><img src="img/toyo.png"></a>
+			<a href="#" class="bridge"><img src="img/bridge.png"></a>
+			<a href="#" class="continental"><img src="img/continental.png"></a>
+			<a href="#" class="cooper"><img src="img/cooper.png"></a>
+			<a href="#" class="avon"><img src="img/avon.png"></a>
+			<a href="#" class="factory"><img src="img/factory.png"></a>
+			<a href="#" class="pirelli"><img src="img/pirelli.png"></a>
+			<a href="#" class="dunlop"><img src="img/dunlop.png"></a>
 		</div>
 		<footer>
 			<ul class="hrefs">
